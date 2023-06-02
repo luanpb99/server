@@ -20,7 +20,6 @@ io.on('connection', (socket) => {
     });
 });
 
-server.listen(3000, () => {
-    const address = server.address();
-    console.log(`Server is running at http://${address.address}:${address.port}`);
+server.listen(process.env.PORT, () => {
+    console.log(`Server is running `);
 });
